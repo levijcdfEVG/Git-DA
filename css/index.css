@@ -1,0 +1,7 @@
+body{
+    width: 50%;
+    margin: auto;
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
