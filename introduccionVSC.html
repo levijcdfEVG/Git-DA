@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading-BS5.css">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="">Diario de Aprendizaje 1: Git</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="introduccionVSC.html">Introducción al vsc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalacionGit.html"><strong>Empezando a funcionar</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="comandosGit.html">Comandos principales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ramas.html">Trabajo con ramas y colaborativo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block clean-post dark">				<div class="caption v-middle text-center">
+					<h1 class="cd-headline clip">
+			            <span class="blc">GIT | </span>
+			            <span class="cd-words-wrapper">
+			              <b class="is-visible">¿Que Es?</b>
+			              <b>¿Como funciona?</b>
+			            </span>
+	          		</h1>
+				</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <div class="container">
+                <div class="block-content">
+                    <div class="post-body">
+                        <h3>¿Que son los sistemas de gestion de versiones?</h3>
+                        <p>Son sistemas que registran los cambios en un archivo o proyecto, definiendo diferentes versiones, que pudieran recuperarse de manera específica.<br>El servicio estándar para este tipo de sistema es <strong>GIT</strong>.</p>
+                        <div class="col offset-xl-3"><img class="rounded img-fluid" alt="A generic square placeholder image with rounded corners in a figure." src="assets/img/pexels-photo-11035539.jpeg"></div>
+                        <figure class="figure">
+                            <figcaption class="figure-caption" style="margin-left: 476px;">El todo poderoso GIT</figcaption>
+                        </figure>
+                        <h4>Integraciones</h4>
+                        <p>Estos sistemas, nominadamente <a href="https://github.com/" target="_blank"><strong>GitHub</strong></a>, <a href="https://about.gitlab.com/" target="_blank"><strong>GitLab</strong></a><strong> </strong>y <a href="https://bitbucket.org/" target="_blank"><strong>BitBucket</strong></a><strong> </strong>se suelen integrar en los entornos de desarrollo inteligentes (IDEs) más modernos del mercado (PhpStorm, WebStorm, Visual Studio Code) normalmente mediante extensiones que se suelen descargar desde el marketplace de dichos IDEs.&nbsp;</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" alt="A generic square placeholder image with rounded corners in a figure." src="assets/img/pexels-photo-10816120.jpeg"></figure>
+                            </div>
+                            <div class="col">
+                                <p>También es muy común verlos integrados en sistemas de despliegue de ficheros como Docker y de hosting en plataformas como Kubernetes, AWS, o Google Cloud, donde permiten la gestión y orquestación eficiente de aplicaciones en contenedores. <br><br>Estos sistemas se utilizan ampliamente para implementar arquitecturas de microservicios, facilitando la escalabilidad, la automatización del despliegue y la administración de aplicaciones en entornos distribuidos.<br><br>Gracias a su capacidad para empaquetar aplicaciones con todas sus dependencias, los contenedores garantizan la consistencia en los entornos de desarrollo, prueba y producción, mejorando el flujo de trabajo DevOps y reduciendo los errores relacionados con las diferencias entre entornos.</p>
+                            </div>
+                        </div>
+                        <h4>¿Como funciona Git?</h4>
+                        <p>Git es un sistema de control de versiones que permite llevar un seguimiento de los cambios realizados en archivos a lo largo del tiempo. Funciona a través de diferentes estados por los que pasan los archivos en un proyecto. Un archivo puede estar en estado <strong>untracked </strong>cuando aún no ha sido agregado al repositorio y no está bajo control de versiones. Cuando un archivo ya ha sido agregado y no ha cambiado desde su última versión, se encuentra en estado <strong>unmodified</strong>. Si se realizan modificaciones en el archivo, este pasa al estado de <strong>modified</strong>, pero aún no ha sido preparado para ser guardado.</p>
+                        <div class="row">
+                            <div class="col">
+                                <p>Una vez que los cambios en los archivos modificados están listos para ser incluidos en la siguiente versión, el archivo puede pasar al estado <strong>staged</strong>, lo que significa que se ha preparado para ser confirmado. Finalmente, cuando los archivos se confirman, pasan al estado <strong>committed</strong>, lo que indica que los cambios se han almacenado de forma segura en la<strong> base de datos local de Git</strong>. Este proceso asegura un control preciso de la evolución de los archivos y facilita la colaboración entre diferentes usuarios que trabajan en un mismo proyecto.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" src="assets/img/scenery/gitstatus.png" alt="A generic square placeholder image with rounded corners in a figure."></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright"></div>
+        </section>
+    </main>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Animated-Type-Heading-BS5-Animated-Type-Heading.js"></script>
+</body>
+
+</html>

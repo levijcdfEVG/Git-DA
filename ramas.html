@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading-BS5.css">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="">Diario de Aprendizaje 1: Git</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccionVSC.html">Introducción al vsc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalacionGit.html"><strong>Empezando a funcionar</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="comandosGit.html">Comandos principales</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ramas.html">Trabajo con ramas y colaborativo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block clean-post dark">				<div class="caption v-middle text-center">
+					<h1 class="cd-headline clip">
+			            <span class="blc">Ramas| </span>
+			            <span class="cd-words-wrapper">
+			              <b class="is-visible">Branch</b>
+			              <b>Reset</b>
+						  <b>Merge</b>
+						  <b>Coop</b>
+			            </span>
+	          		</h1>
+				</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <div class="container">
+                <div class="block-content">
+                    <div class="post-body">
+                        <h3><strong>Trabajo Colaborativo y Gestión de Ramas en GIT</strong></h3>
+                        <p>Uno de los puntos fuertes de Git es su capacidad para facilitar el trabajo colaborativo a través del uso de ramas. Las ramas permiten a los desarrolladores trabajar en nuevas funcionalidades, correcciones o experimentos de forma aislada, sin interferir con el trabajo principal del proyecto. Este enfoque es clave para un desarrollo ágil y organizado.</p>
+                        <figure class="figure"></figure>
+                        <div>
+                            <h4><strong><em>git branch</em>: Creación y Gestión de Ramas</strong></h4>
+                            <p>El comando git branch permite crear y gestionar ramas dentro de un repositorio. Al crear una nueva rama con git branch [nombre_rama], se genera una copia del código base en la que puedes trabajar de manera independiente. Luego, para cambiar a esa rama, usa el comando git checkout [nombre_rama]. Esto te permite tener varias versiones del proyecto en paralelo, ideal para desarrollar nuevas características sin afectar el código principal.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" src="assets/img/branches.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="494" height="494"></figure>
+                            </div>
+                            <div class="col">
+                                <h4><strong><em>git merge</em>: Fusionando Cambios</strong></h4>
+                                <p>Una vez que has terminado de trabajar en una rama, puedes fusionar esos cambios con la rama principal (generalmente llamada main o master) mediante git merge. Este comando combina los cambios de una rama con otra. Si no hay conflictos, la fusión es directa, pero si ambos desarrolladores han modificado las mismas líneas de código, Git solicitará que resuelvas esos conflictos manualmente.</p>
+                            </div>
+                        </div>
+                        <h4><strong><em>git reset</em>: Revirtiendo Cambios</strong></h4>
+                        <p>Si has cometido un error en uno de tus commits, git reset te permite deshacer los cambios, ya sea de forma suave, manteniendo los archivos pero eliminando el commit (--soft), o eliminando los cambios por completo (--hard). Esta herramienta es útil para corregir errores sin perder el trabajo realizado.</p>
+                        <div class="row">
+                            <div class="col">
+                                <h4><em>Cooperación</em></h4>
+                                <p>El trabajo con ramas y la capacidad de fusionar o revertir cambios son características esenciales que hacen de Git una herramienta poderosa para el trabajo colaborativo. Estas funcionalidades permiten a los equipos de desarrollo trabajar en paralelo de manera eficiente, asegurando que el código sea flexible, organizado y fácil de integrar.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" alt="A generic square placeholder image with rounded corners in a figure." src="assets/img/pexels-photo-1181253.jpeg" width="524" height="299"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright"></div>
+        </section>
+    </main>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Animated-Type-Heading-BS5-Animated-Type-Heading.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading-BS5.css">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="">Diario de Aprendizaje 1: Git</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccionVSC.html">Introducción al vsc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog-post-list.html"><strong>Empezando a funcionar</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="comandosGit.html">Comandos principales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Trabajo con ramas y colaborativo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block clean-post dark">				<div class="caption v-middle text-center">
+					<h1 class="cd-headline clip">
+			            <span class="blc">Empezando| </span>
+			            <span class="cd-words-wrapper">
+			              <b class="is-visible">Setup</b>
+			              <b>Instalación</b>
+			            </span>
+	          		</h1>
+				</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <div class="container">
+                <div class="block-content">
+                    <div class="post-body">
+                        <h3><strong>Introducción a GIT en Windows</strong></h3>
+                        <p>Git es una de las herramientas más utilizadas para el control de versiones, permitiendo a los desarrolladores gestionar y rastrear los cambios en el código de sus proyectos. Para instalar Git en <strong>Windows</strong>, simplemente descarga el instalador desde la página oficial de <strong>Git </strong>y sigue las instrucciones de instalación. Una vez completada la instalación, podrás utilizar Git desde la línea de comandos (<strong>Git Bash</strong>) o integrarlo con editores de código como <strong>Visual Studio Code</strong>. Este proceso es crucial para quienes trabajan en equipo, ya que Git permite coordinar y colaborar eficientemente con otros desarrolladores, manteniendo un historial detallado de los cambios.</p>
+                        <div class="col offset-xl-3"><img class="rounded img-fluid" src="assets/img/downloadGit.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="526" height="301"></div>
+                        <figure class="figure"></figure>
+                        <div>
+                            <h4><strong>Configuración Inicial de GIT</strong></h4>
+                            <p>Después de instalar Git, el siguiente paso es configurarlo con tu nombre y correo electrónico, los cuales serán utilizados para identificarte en cada commit. Esta configuración solo es necesaria una vez, pero puede actualizarse si lo necesitas en el futuro. Para realizar esta configuración inicial, utiliza los siguientes comandos desde la terminal de <strong>Git Bash</strong>:<br><br></p>
+                            <ul>
+                                <li><em>git config --global user.name "Tu Nombre"</em></li>
+                                <li><em>git config --global user.email "tuemail@ejemplo.com"</em></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" src="assets/img/repo.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="494" height="494"></figure>
+                            </div>
+                            <div class="col">
+                                <p>Además, puedes verificar tu configuración en cualquier momento utilizando <em>git config --list</em>, que mostrará todos los parámetros configurados a nivel global, como el nombre de usuario y el correo electrónico.</p>
+                                <h4><strong>Creación de un Repositorio</strong></h4>
+                                <p>Una vez configurado Git, puedes crear un nuevo repositorio en cualquier carpeta de tu proyecto con el comando git init. Esto inicializa un repositorio local en esa carpeta, preparando el entorno para empezar a rastrear cambios. Luego, usa git status para ver el estado de tus archivos. Los archivos nuevos aparecerán como "<strong>untracked</strong>", lo que significa que aún no están siendo rastreados por Git.</p>
+                            </div>
+                        </div>
+                        <h4>Añadir archivos</h4>
+                        <p>Para agregar archivos al área de preparación (staging), usa el comando git add [archivo] o git add . si deseas incluir todos los archivos del proyecto. Esto prepara los archivos para ser confirmados (commit). Una vez que hayas agregado los archivos, realiza un commit para guardar los cambios en el repositorio local usando git <em>commit -m "Mensaje del commit"</em>. Ahora tus cambios estarán almacenados de manera segura en el historial del repositorio.</p>
+                        <div class="row">
+                            <div class="col">
+                                <p>Después de confirmar los cambios con `<strong>git commi</strong>t`, es posible que desees subir estos cambios a un repositorio remoto, como <strong>GitHub </strong>o <strong>GitLab</strong>, para compartirlos con otros colaboradores o simplemente para mantener una copia segura en la nube.<br><br>Para hacerlo, primero debes vincular tu repositorio local con uno remoto mediante el comando `<em><span style="text-decoration: underline;">git remote add origin [URL]</span></em>`, donde la URL es la dirección de tu repositorio en la plataforma remota. Una vez configurado, puedes enviar los cambios con `<em><span style="text-decoration: underline;">git push -u origin main</span></em>`, lo que subirá tus <strong>commits </strong>a la rama principal del repositorio remoto.<br><br>A partir de ahí, cualquier colaborador con acceso podrá clonar el repositorio y trabajar en el proyecto de manera colaborativa.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" src="assets/img/scenery/files.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="524" height="299"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright"></div>
+        </section>
+    </main>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Animated-Type-Heading-BS5-Animated-Type-Heading.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading-BS5.css">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="">Diario de Aprendizaje 1: Git</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccionVSC.html">Introducción al vsc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalacionGit.html"><strong>Empezando a funcionar</strong></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="comandosGit.html">Comandos principales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ramas.html">Trabajo con ramas y colaborativo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block clean-post dark">				<div class="caption v-middle text-center">
+					<h1 class="cd-headline clip">
+			            <span class="blc">Comandos| </span>
+			            <span class="cd-words-wrapper">
+			              <b class="is-visible">Commit</b>
+			              <b>Init</b>
+						  <b>Status</b>
+						  <b>Add</b>
+						  <b>Log</b>
+						  <b>Remote</b>
+						  <b>Push</b>
+						  <b>Pull</b>
+			            </span>
+	          		</h1>
+				</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <div class="container">
+                <div class="block-content">
+                    <div class="post-body">
+                        <h3><strong>Principales Comandos de GIT</strong></h3>
+                        <p><strong>Git </strong>es una herramienta poderosa que ofrece una amplia gama de <strong>comandos </strong>para gestionar el control de versiones de un proyecto. Desde la creación de un repositorio hasta la <strong>sincronización </strong>de los cambios en un servidor remoto, <strong>Git </strong>facilita el manejo eficiente de proyectos colaborativos. A continuación, veremos algunos de los comandos más importantes y cómo utilizarlos en tu flujo de trabajo diario.</p>
+                        <div class="col offset-xl-3"><img class="rounded img-fluid" src="assets/img/comandos.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="526" height="301"></div>
+                        <figure class="figure"></figure>
+                        <div>
+                            <h4><strong><em>git init</em>: Inicializando un Repositorio</strong></h4>
+                            <p>El primer paso para comenzar a trabajar con Git en cualquier proyecto es crear un nuevo repositorio. Esto se hace mediante el comando git init, que inicializa un repositorio vacío en el directorio en el que estés trabajando. Este repositorio local permitirá que Git rastree los cambios en tus archivos y gestione las versiones de tu proyecto de manera eficiente.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" src="assets/img/chill.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="494" height="494"></figure>
+                            </div>
+                            <div class="col">
+                                <h4><strong><em>git status</em>: Visualizando el Estado del Proyecto</strong></h4>
+                                <p>Una vez que has comenzado a trabajar en tu proyecto, es útil saber qué archivos han sido modificados, cuáles están listos para ser confirmados y cuáles aún no están siendo rastreados por Git. El comando git status te proporciona esta información, permitiéndote ver el estado actual de tu repositorio.</p>
+                            </div>
+                        </div>
+                        <h4><strong><em>git add</em>: Preparando Archivos para el Commit</strong></h4>
+                        <p>Para que Git rastree y almacene los cambios de un archivo, primero necesitas agregarlo al área de preparación (staging area) usando el comando git add. Puedes agregar archivos específicos, patrones de archivos o, si quieres añadir todos los archivos modificados, usar el comando git add . para incluir todo de una vez.</p>
+                        <div class="row">
+                            <div class="col">
+                                <h4><strong><em>git commit</em>: Guardando Cambios en el Repositorio</strong></h4>
+                                <p>Después de añadir archivos al área de preparación, el siguiente paso es confirmarlos en el repositorio local usando git commit. Esto asegura que los cambios realizados en los archivos se guarden en el historial del repositorio. Es importante incluir un mensaje descriptivo usando la opción -m, que documente lo que se ha modificado en ese commit.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="figure"><img class="rounded img-fluid figure-img" src="assets/img/scenery/files.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="524" height="299"></figure>
+                            </div>
+                        </div>
+                        <h4><br><em>git log</em>: Consultando el Historial de Commits<br><br></h4>
+                        <p>Para visualizar el historial de commits realizados en el repositorio, puedes utilizar el comando git log. Este comando muestra una lista detallada de todos los commits, incluyendo la fecha, autor y mensaje de cada uno. Si prefieres una versión más resumida, git log --oneline presenta un historial compacto, con un solo commit por línea.</p>
+                        <div class="row">
+                            <div class="col"><img class="rounded img-fluid" src="assets/img/scenery/trabajoRemoto.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="515" height="294"></div>
+                            <div class="col">
+                                <h4><br><em>git remote</em>: Trabajando con Repositorios Remotos<br><br></h4>
+                                <p>Uno de los principales beneficios de Git es su capacidad para interactuar con repositorios remotos, permitiendo la colaboración entre varios desarrolladores. El comando git remote gestiona las conexiones a repositorios remotos. Puedes añadir un remoto con git remote add origin [URL], donde origin es el nombre del repositorio y la URL es la dirección del servidor donde está alojado.</p>
+                            </div>
+                        </div>
+                        <h4><br><em>git push</em>: Subiendo Cambios al Repositorio Remoto<br><br></h4>
+                        <p>Una vez que hayas realizado commits en tu repositorio local, puedes subir estos cambios al repositorio remoto con git push. Este comando envía tus cambios a la rama especificada del servidor remoto, permitiendo que otros desarrolladores puedan acceder a ellos. Para establecer una conexión permanente entre tu rama local y la remota, usa git push -u origin main.</p>
+                        <div class="row">
+                            <div class="col">
+                                <h4><br><em>git pull</em>: Actualizando el Repositorio Local<br><br></h4>
+                                <p>Al colaborar en un proyecto con varias personas, es importante mantener tu repositorio local actualizado con los últimos cambios que otros desarrolladores han subido. El comando git pull combina los cambios del repositorio remoto con tu repositorio local, garantizando que siempre trabajes con la versión más reciente del proyecto.</p>
+                            </div>
+                            <div class="col"><img class="rounded img-fluid" src="assets/img/scenery/sistema.jpeg" alt="A generic square placeholder image with rounded corners in a figure." width="524" height="299"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright"></div>
+        </section>
+    </main>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Animated-Type-Heading-BS5-Animated-Type-Heading.js"></script>
+</body>
+
+</html>
